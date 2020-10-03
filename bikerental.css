@@ -1,0 +1,95 @@
+body{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+#header{
+  background-color:#FFD7B5;
+  display:flex;
+  justify-content: flex-end;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+}
+.inlineMenu{
+  display:inline;
+  list-style: none;
+  color:#BEBD7C;
+  padding:4px;
+  border-left:0.5px solid #FCAD6A;
+}
+.inlineMenu:hover{
+  color:#BA3265;
+}
+.activities{
+  background-color:white;
+  height:50px;
+  border:1px solid #BA3265;
+  border-radius:5px;
+  padding-top:5%;
+  padding-bottom:5%;
+  margin:50px 100px 50px 100px;
+  box-shadow: 3px 3px 3px grey;
+}
+.activitylogo{
+  float:left;
+  margin:0px 90px 0px 150px;
+}
+.activitieslist{
+  display:flex;
+  flex-direction: column;
+}
+#menubutton,.ham{
+  display:none;
+}
+#dropdownMenu{
+  display:none;
+}
+.scrollblock{
+  background-color:#D38613;
+  text-align:center;
+  height:50px;
+  border-radius:5px;
+  padding-top:5%;
+  padding-bottom:4%;
+  margin:50px 100px 50px 100px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+
+@media only screen and (max-width: 600px){
+  #header{
+    padding:2px;
+  }
+  .ham{
+    display:block;
+    width:20px;
+    height:4px;
+    margin:3px;
+    background-color: #FEB884;
+    list-style: none;
+  }
+  #menubutton{
+    display:flex;
+    flex-direction: column;
+    margin-left:auto;
+    border:0.5px solid black;
+    border-radius:5px;
+    background-color: white;
+  }
+  .inlineMenu{
+    display:none;
+  }
+  .activitylogo{
+    float:left;
+    margin:0px 10px 0px 10px;
+  }
+  .activitieslist{
+    display:flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
